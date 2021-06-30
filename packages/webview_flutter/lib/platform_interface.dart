@@ -195,12 +195,12 @@ abstract class WebViewPlatformController {
   ///
   /// Throws an UnimplementedError if WebView loadDataWithBaseURL is not implemented on the current platform.
   Future<void> loadDataWithBaseURL(
-      {String baseUrl='', @required String data,
-        String mimeType,
-        String encoding,
-        String historyUrl,
-        Map<String, String> headers,
-      }) {
+      {String baseUrl='', required String data,
+        String? mimeType,
+        String? encoding,
+        String? historyUrl,
+        Map<String, String>? headers,
+      }) async {
     throw UnimplementedError(
         "WebView loadUrl is not implemented on the current platform");
   }
